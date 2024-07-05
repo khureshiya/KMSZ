@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Consulting Services</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.home-section {
+    position: relative;
+    height: 100vh;
+}
+
+.hero {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heroine-text {
+    position: absolute;
+    top: 250px;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.about-section, .services-section, .contact-section, .blog-section, .careers-section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.about-section h2, .services-section h2, .contact-section h2, .blog-section h2, .careers-section h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.services-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-section ul li {
+    margin: 0.5em 0;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section label, .contact-section input, .contact-section textarea {
+    margin: 0.5em 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-section button {
+    padding: 0.5em 2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.contact-section button:hover {
+    background-color: #555;
+}
+
+.blog-section article {
+    margin: 2em 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}  
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="career.html">Careers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="hero">
+            <img src="/assests/images/itt.jpg" alt="IT Consulting" >
+            <div class="heroine-text"  >
+                <h1 style="font-size:xx-large ;">Welcome to IT Consulting Services</h1>
+                <p >Your Partner in Digital Transformation</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IT Consulting Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>

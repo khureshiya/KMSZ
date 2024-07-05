@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Consultancy Careers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Roboto', sans-serif; margin: 0; padding: 0; box-sizing: border-box;">
+
+    <header style="background: linear-gradient(to right, #587eb3, #3887e8); color: white; text-align: center; padding: 50px 0; font-size: 1.3em; position: relative; overflow: hidden;">
+        <div style="position: absolute; width: 200%; height: 200%; top: -50%; left: -50%; background: rgba(255, 255, 255, 0.2); animation: headerAnimation 20s infinite linear; z-index: 0;"></div>
+        <h1 style="margin: 0; z-index: 2; position: relative;">Join Our IT Consultancy Team</h1>
+    </header>
+
+    <div class="container" style="padding: 20px;">
+        <section class="career" style="background: #f9f9f9; margin: 20px 0; padding: 20px; border-radius: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+            <h2 style="margin-top: 0;">Frontend Developer</h2>
+            <p>We are looking for a skilled Frontend Developer to join our team. Responsibilities include...</p>
+        </section>
+
+        <section class="career" style="background: #f9f9f9; margin: 20px 0; padding: 20px; border-radius: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+            <h2 style="margin-top: 0;">Backend Developer</h2>
+            <p>We are looking for a skilled Backend Developer to join our team. Responsibilities include...</p>
+        </section>
+
+        <section class="career" style="background: #f9f9f9; margin: 20px 0; padding: 20px; border-radius: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+            <h2 style="margin-top: 0;">Project Manager</h2>
+            <p>We are looking for an experienced Project Manager to join our team. Responsibilities include...</p>
+        </section>
+        <section>
+            <div class="my-blog">
+                <a href="jobapplication.html" style="text-align: center;">Apply Now:</a>
+                </div>
+        </section>
+
+        <section class="contact-form" style="background: #eee; padding: 20px; border-radius: 10px; margin-top: 20px;">
+            <h2 style="margin-top: 0;">Contact Us</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc;">
+                <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc;">
+                <textarea name="message" placeholder="Your Message" rows="5" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+                <button type="submit" style="background: #1381ff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background 0.3s;">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <style>
+        @keyframes headerAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    
+    <script>
+        document.querySelectorAll('.career').forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.style.transform = 'translateY(-10px)';
+                item.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.1)';
+            });
+            item.addEventListener('mouseout', () => {
+                item.style.transform = 'translateY(0)';
+                item.style.boxShadow = 'none';
+            });
+        });
+        document.querySelector('button').addEventListener('mouseover', () => {
+            document.querySelector('button').style.background = '#45a049';
+        });
+        document.querySelector('button').addEventListener('mouseout', () => {
+            document.querySelector('button').style.background = '#4CAF50';
+        });
+    </script>
+</body>
+</html>
+
+
+

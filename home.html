@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #000000;
+        }
+
+        header {
+            background-color: #002B5B;
+            color: white;
+            padding: 1em 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #8FE3CF;
+        }
+
+        .home-section {
+            position: relative;
+            height: 100vh;
+        }
+
+        .hero {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section {
+            padding: 4em 2em;
+            text-align: center;
+        }
+
+        .introduction-section,
+        .services-overview-section,
+        .key-differentiators-section,
+        .testimonials-section {
+            background: #77737389;
+            margin-bottom: 2em;
+            border-radius: 10px;
+            padding: 2em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .introduction-section h2,
+        .services-overview-section h2,
+        .key-differentiators-section h2,
+        .testimonials-section h2 {
+            color: #010203;
+            font-weight: 700;
+            margin-bottom: 1em;
+        }
+
+        .services-overview-section .service {
+            margin-bottom: 2em;
+        }
+
+        .services-overview-section .service h3 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+            color: #020100;
+            font-weight: 500;
+        }
+
+        .key-differentiators-section ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .key-differentiators-section ul li {
+            margin: 0.5em 0;
+            padding-left: 1.5em;
+            position: relative;
+            font-weight: 500;
+        }
+
+        .key-differentiators-section ul li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #4eba7b;
+        }
+
+        .testimonials-section .testimonial {
+            margin-bottom: 2em;
+            padding: 1em;
+            background: #fffefe81;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonials-section .testimonial p {
+            font-style: italic;
+            color: #000000;
+        }
+
+        .testimonials-section .testimonial cite {
+            display: block;
+            margin-top: 1em;
+            font-weight: bold;
+            color: #082a41;
+        }
+
+        footer {
+            background-color: #002B5B;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        body {
+            background-image: url('/assests/images/itt.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Introduction">Introduction</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#key-differentiators">Key Differentiators</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Introduction" class="introduction-section">
+        <h2>INTRODUCTION</h2>
+        <p>Welcome to IT Consulting Services, your trusted partner in navigating the complex world of technology. With
+            over two decades of industry experience, we specialize in delivering customized IT solutions that drive
+            business success. Our dedicated team of experts is committed to providing strategic guidance, innovative
+            solutions, and exceptional support to help you achieve your digital transformation goals.</p>
+    </section>
+
+    <section id="Services" class="services-overview-section">
+        <h2>Services</h2>
+        <div class="service">
+            <h3>IT Strategy and Consulting</h3>
+            <p>Our IT strategy and consulting services help you align your technology initiatives with your business
+                objectives, ensuring a clear roadmap to success.</p>
+        </div>
+        <div class="service">
+            <h3>Software Development</h3>
+            <p>We offer end-to-end software development services, from planning and design to implementation and
+                maintenance, tailored to meet your specific needs.</p>
+        </div>
+        <div class="service">
+            <h3>Cloud Services</h3>
+            <p>Leverage the power of the cloud with our comprehensive cloud services, including migration, deployment,
+                and management of cloud-based solutions.</p>
+        </div>
+        <div class="service">
+            <h3>Cybersecurity</h3>
+            <p>Protect your business from cyber threats with our advanced cybersecurity solutions, designed to safeguard
+                your data and ensure regulatory compliance.</p>
+        </div>
+    </section>
+
+    <section id="key-differentiators" class="key-differentiators-section">
+        <h2>Key Differentiators</h2>
+        <ul>
+            <li>Over 20 years of industry experience</li>
+            <li>Customized solutions tailored to your business</li>
+            <li>Proven track record of successful projects</li>
+            <li>Dedicated and skilled team of professionals</li>
+            <li>Commitment to client satisfaction and support</li>
+        </ul>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <p>"IT Consulting Services has been instrumental in transforming our IT infrastructure. Their expertise and
+                dedication have significantly improved our operational efficiency."</p>
+            <cite>- Client A</cite>
+        </div>
+        <div class="testimonial">
+            <p>"The team at IT Consulting Services is exceptional. They provided us with innovative solutions that have
+                helped us stay ahead of the competition."</p>
+            <cite>- Client B</cite>
+        </div>
+        <div class="testimonial">
+            <p>"We highly recommend IT Consulting Services for their professionalism and excellent support. They truly
+                understand our business needs and deliver top-notch services."</p>
+            <cite>- Client C</cite>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IT Consulting Services. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
